@@ -1,14 +1,68 @@
-*{
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff6cc, #fffbe6);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-button{
-  background: blue;
-  color: white;
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root > div {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(255, 200, 80, 0.35);
+  max-width: 420px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #f4b400;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #f9a825;
+  margin-bottom: 12px;
+}
+
+input {
+  width: 100%;
   padding: 10px;
-  cursor: pointer;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #ffe082;
+  outline: none;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #ffca28;
+  box-shadow: 0 0 0 2px rgba(255, 202, 40, 0.25);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #ffca28;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  color: #5d4037;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background: #f4b400;
 }

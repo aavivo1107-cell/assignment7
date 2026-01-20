@@ -1,21 +1,13 @@
-import Header from './component/Header'
-import Namecomponent from './component/Namecomponent'
-import AGEcomponent from "./component/Age"
-import Datacomponent from './component/Datacomponent'
-import "./App.css"
+import Login from "./Login";
+import Register from "./Register";
 function App() {
-
   return (
-    <div className='App'>
-    <Header/>
-    <Namecomponent/>
-    <AGEcomponent/>
-    <main>
-    <Datacomponent/>
-    </main>
+    <div>
+      <h1>App Loaded</h1>
+      <Login />
+      <Register/>
     </div>
-    )
-  
+  );
 }
 
-export default App
+export default App;
